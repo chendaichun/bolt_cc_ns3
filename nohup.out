@@ -1,0 +1,8 @@
+Waf: Entering directory `/home/dyl/bolt_cc_ns3/build'
+Waf: Leaving directory `/home/dyl/bolt_cc_ns3/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.223s)
+Running the Simulation...
+assert failed. cond="(targetMsg->GetSrcAddress() == ipv4Header.GetDestination()) && (targetMsg->GetDstAddress() == ipv4Header.GetSource()) && (targetMsg->GetSrcPort() == boltHeader.GetDstPort()) && (targetMsg->GetDstPort() == boltHeader.GetSrcPort())", +1.004646055s -1 file=../src/internet/model/bolt-l4-protocol.cc, line=1342
+terminate called without an active exception
+Command ['/home/dyl/bolt_cc_ns3/build/scratch/bolt-32host-fattree'] terminated with signal SIGIOT. Run it under a debugger to get more information (./waf --run <program> --gdb").
