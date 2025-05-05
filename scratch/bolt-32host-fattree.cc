@@ -235,8 +235,8 @@ int main(int argc, char *argv[]) {
   double networkLoad = 0.5;
   uint32_t simIdx = 0;
   bool traceMessages = true;
-  bool traceQueues = false;
-  bool tracePruTokens = false;
+  bool traceQueues = true;
+  bool tracePruTokens = true;
   bool traceAbsTokens = false;
   bool traceFlowStats = false;
   bool debugMode = false;

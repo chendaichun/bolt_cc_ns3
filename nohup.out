@@ -1,8 +1,757 @@
 Waf: Entering directory `/home/dyl/bolt_cc_ns3/build'
 Waf: Leaving directory `/home/dyl/bolt_cc_ns3/build'
 Build commands will be stored in build/compile_commands.json
-'build' finished successfully (0.223s)
+'build' finished successfully (0.226s)
 Running the Simulation...
-assert failed. cond="(targetMsg->GetSrcAddress() == ipv4Header.GetDestination()) && (targetMsg->GetDstAddress() == ipv4Header.GetSource()) && (targetMsg->GetSrcPort() == boltHeader.GetDstPort()) && (targetMsg->GetDstPort() == boltHeader.GetSrcPort())", +1.004646055s -1 file=../src/internet/model/bolt-l4-protocol.cc, line=1342
-terminate called without an active exception
-Command ['/home/dyl/bolt_cc_ns3/build/scratch/bolt-32host-fattree'] terminated with signal SIGIOT. Run it under a debugger to get more information (./waf --run <program> --gdb").
+The average thp from 03-07-0a:00:01:01:e8:03:00: 67.4885Gbps
+The average thp from 03-07-0a:00:02:01:e9:03:00: 59.3254Gbps
+99%ile queue size: 4.70588usec (60000 Bytes)
+Time taken by simulation: 0.983333 minutes
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+Bolt 公平性实验可视化工具
+============================
+分析来自: ../outputs/bolt-fairness/0_MSGAGG_DEFAULT 的数据
+检测到的拥塞控制模式: DEFAULT
+检测到的功能: MSG_AGG
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.log 读取流统计数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.qlen 读取队列长度数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.tpt 读取吞吐量数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.pru 读取PRU令牌数据
+流时序:
+  10.0.1.1:1000→10.0.3.1:2000: 开始=1.000000s, 结束=1.024208s
+  10.0.2.1:1001→10.0.4.1:2001: 开始=1.000000s, 结束=1.041274s
+发现 2 个唯一流:
+  10.0.1.1:1000 → 10.0.3.1:2000
+  10.0.2.1:1001 → 10.0.4.1:2001
+拥塞窗口图表已保存至 ../plots/1/congestion_window_DEFAULT_MSG_AGG.png
+对数刻度拥塞窗口图表已保存至 ../plots/1/congestion_window_DEFAULT_MSG_AGG_log.png
+RTT图表已保存至 ../plots/1/rtt_DEFAULT_MSG_AGG.png
+队列长度图表已保存至 ../plots/1/queue_length_DEFAULT_MSG_AGG.png
+PRU令牌图表已保存至 ../plots/1/pru_tokens_DEFAULT_MSG_AGG.png
+绘图完成！
+Waf: Entering directory `/home/dyl/bolt_cc_ns3/build'
+Waf: Leaving directory `/home/dyl/bolt_cc_ns3/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.228s)
+Running the Simulation...
+The average thp from 03-07-0a:00:01:01:e8:03:00: 67.4885Gbps
+The average thp from 03-07-0a:00:02:01:e9:03:00: 59.3254Gbps
+99%ile queue size: 4.70588usec (60000 Bytes)
+Time taken by simulation: 1.06667 minutes
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+Bolt 公平性实验可视化工具
+============================
+分析来自: ../outputs/bolt-fairness/0_MSGAGG_DEFAULT 的数据
+检测到的拥塞控制模式: DEFAULT
+检测到的功能: MSG_AGG
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.log 读取流统计数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.qlen 读取队列长度数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.tpt 读取吞吐量数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.pru 读取PRU令牌数据
+流时序:
+  10.0.1.1:1000→10.0.3.1:2000: 开始=1.000000s, 结束=1.024208s
+  10.0.2.1:1001→10.0.4.1:2001: 开始=1.000000s, 结束=1.041274s
+发现 2 个唯一流:
+  10.0.1.1:1000 → 10.0.3.1:2000
+  10.0.2.1:1001 → 10.0.4.1:2001
+拥塞窗口图表已保存至 ../plots/6/congestion_window_DEFAULT_MSG_AGG.png
+对数刻度拥塞窗口图表已保存至 ../plots/6/congestion_window_DEFAULT_MSG_AGG_log.png
+RTT图表已保存至 ../plots/6/rtt_DEFAULT_MSG_AGG.png
+队列长度图表已保存至 ../plots/6/queue_length_DEFAULT_MSG_AGG.png
+PRU令牌图表已保存至 ../plots/6/pru_tokens_DEFAULT_MSG_AGG.png
+绘图完成！
+Waf: Entering directory `/home/dyl/bolt_cc_ns3/build'
+Waf: Leaving directory `/home/dyl/bolt_cc_ns3/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.245s)
+Running the Simulation...
+The average thp from 03-07-0a:00:01:01:e8:03:00: 67.4885Gbps
+The average thp from 03-07-0a:00:02:01:e9:03:00: 59.3254Gbps
+99%ile queue size: 4.70588usec (60000 Bytes)
+Time taken by simulation: 1.08333 minutes
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+Bolt 公平性实验可视化工具
+============================
+分析来自: ../outputs/bolt-fairness/0_MSGAGG_DEFAULT 的数据
+检测到的拥塞控制模式: DEFAULT
+检测到的功能: MSG_AGG
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.log 读取流统计数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.qlen 读取队列长度数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.tpt 读取吞吐量数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.pru 读取PRU令牌数据
+流时序:
+  10.0.1.1:1000→10.0.3.1:2000: 开始=1.000000s, 结束=1.024208s
+  10.0.2.1:1001→10.0.4.1:2001: 开始=1.000000s, 结束=1.041274s
+发现 2 个唯一流:
+  10.0.1.1:1000 → 10.0.3.1:2000
+  10.0.2.1:1001 → 10.0.4.1:2001
+拥塞窗口图表已保存至 ../plots/11/congestion_window_DEFAULT_MSG_AGG.png
+对数刻度拥塞窗口图表已保存至 ../plots/11/congestion_window_DEFAULT_MSG_AGG_log.png
+RTT图表已保存至 ../plots/11/rtt_DEFAULT_MSG_AGG.png
+队列长度图表已保存至 ../plots/11/queue_length_DEFAULT_MSG_AGG.png
+PRU令牌图表已保存至 ../plots/11/pru_tokens_DEFAULT_MSG_AGG.png
+绘图完成！
+Waf: Entering directory `/home/dyl/bolt_cc_ns3/build'
+Waf: Leaving directory `/home/dyl/bolt_cc_ns3/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.253s)
+Running the Simulation...
+The average thp from 03-07-0a:00:01:01:e8:03:00: 67.4885Gbps
+The average thp from 03-07-0a:00:02:01:e9:03:00: 59.3254Gbps
+99%ile queue size: 4.70588usec (60000 Bytes)
+Time taken by simulation: 1.05 minutes
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+Bolt 公平性实验可视化工具
+============================
+分析来自: ../outputs/bolt-fairness/0_MSGAGG_DEFAULT 的数据
+检测到的拥塞控制模式: DEFAULT
+检测到的功能: MSG_AGG
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.log 读取流统计数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.qlen 读取队列长度数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.tpt 读取吞吐量数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.pru 读取PRU令牌数据
+流时序:
+  10.0.1.1:1000→10.0.3.1:2000: 开始=1.000000s, 结束=1.024208s
+  10.0.2.1:1001→10.0.4.1:2001: 开始=1.000000s, 结束=1.041274s
+发现 2 个唯一流:
+  10.0.1.1:1000 → 10.0.3.1:2000
+  10.0.2.1:1001 → 10.0.4.1:2001
+拥塞窗口图表已保存至 ../plots/16/congestion_window_DEFAULT_MSG_AGG.png
+对数刻度拥塞窗口图表已保存至 ../plots/16/congestion_window_DEFAULT_MSG_AGG_log.png
+RTT图表已保存至 ../plots/16/rtt_DEFAULT_MSG_AGG.png
+队列长度图表已保存至 ../plots/16/queue_length_DEFAULT_MSG_AGG.png
+PRU令牌图表已保存至 ../plots/16/pru_tokens_DEFAULT_MSG_AGG.png
+绘图完成！
+Waf: Entering directory `/home/dyl/bolt_cc_ns3/build'
+Waf: Leaving directory `/home/dyl/bolt_cc_ns3/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.251s)
+Running the Simulation...
+The average thp from 03-07-0a:00:01:01:e8:03:00: 67.4885Gbps
+The average thp from 03-07-0a:00:02:01:e9:03:00: 59.3254Gbps
+99%ile queue size: 4.70588usec (60000 Bytes)
+Time taken by simulation: 1.06667 minutes
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+Bolt 公平性实验可视化工具
+============================
+分析来自: ../outputs/bolt-fairness/0_MSGAGG_DEFAULT 的数据
+检测到的拥塞控制模式: DEFAULT
+检测到的功能: MSG_AGG
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.log 读取流统计数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.qlen 读取队列长度数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.tpt 读取吞吐量数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.pru 读取PRU令牌数据
+流时序:
+  10.0.1.1:1000→10.0.3.1:2000: 开始=1.000000s, 结束=1.024208s
+  10.0.2.1:1001→10.0.4.1:2001: 开始=1.000000s, 结束=1.041274s
+发现 2 个唯一流:
+  10.0.1.1:1000 → 10.0.3.1:2000
+  10.0.2.1:1001 → 10.0.4.1:2001
+拥塞窗口图表已保存至 ../plots/21/congestion_window_DEFAULT_MSG_AGG.png
+对数刻度拥塞窗口图表已保存至 ../plots/21/congestion_window_DEFAULT_MSG_AGG_log.png
+RTT图表已保存至 ../plots/21/rtt_DEFAULT_MSG_AGG.png
+队列长度图表已保存至 ../plots/21/queue_length_DEFAULT_MSG_AGG.png
+PRU令牌图表已保存至 ../plots/21/pru_tokens_DEFAULT_MSG_AGG.png
+绘图完成！
+Waf: Entering directory `/home/dyl/bolt_cc_ns3/build'
+Waf: Leaving directory `/home/dyl/bolt_cc_ns3/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.251s)
+Running the Simulation...
+The average thp from 03-07-0a:00:01:01:e8:03:00: 67.4885Gbps
+The average thp from 03-07-0a:00:02:01:e9:03:00: 59.3254Gbps
+99%ile queue size: 4.70588usec (60000 Bytes)
+Time taken by simulation: 1.06667 minutes
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+Bolt 公平性实验可视化工具
+============================
+分析来自: ../outputs/bolt-fairness/0_MSGAGG_DEFAULT 的数据
+检测到的拥塞控制模式: DEFAULT
+检测到的功能: MSG_AGG
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.log 读取流统计数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.qlen 读取队列长度数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.tpt 读取吞吐量数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.pru 读取PRU令牌数据
+流时序:
+  10.0.1.1:1000→10.0.3.1:2000: 开始=1.000000s, 结束=1.024208s
+  10.0.2.1:1001→10.0.4.1:2001: 开始=1.000000s, 结束=1.041274s
+发现 2 个唯一流:
+  10.0.1.1:1000 → 10.0.3.1:2000
+  10.0.2.1:1001 → 10.0.4.1:2001
+拥塞窗口图表已保存至 ../plots/26/congestion_window_DEFAULT_MSG_AGG.png
+对数刻度拥塞窗口图表已保存至 ../plots/26/congestion_window_DEFAULT_MSG_AGG_log.png
+RTT图表已保存至 ../plots/26/rtt_DEFAULT_MSG_AGG.png
+队列长度图表已保存至 ../plots/26/queue_length_DEFAULT_MSG_AGG.png
+PRU令牌图表已保存至 ../plots/26/pru_tokens_DEFAULT_MSG_AGG.png
+绘图完成！
+Waf: Entering directory `/home/dyl/bolt_cc_ns3/build'
+Waf: Leaving directory `/home/dyl/bolt_cc_ns3/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.240s)
+Running the Simulation...
+The average thp from 03-07-0a:00:01:01:e8:03:00: 67.4885Gbps
+The average thp from 03-07-0a:00:02:01:e9:03:00: 59.3254Gbps
+99%ile queue size: 4.70588usec (60000 Bytes)
+Time taken by simulation: 1.05 minutes
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+Bolt 公平性实验可视化工具
+============================
+分析来自: ../outputs/bolt-fairness/0_MSGAGG_DEFAULT 的数据
+检测到的拥塞控制模式: DEFAULT
+检测到的功能: MSG_AGG
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.log 读取流统计数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.qlen 读取队列长度数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.tpt 读取吞吐量数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.pru 读取PRU令牌数据
+流时序:
+  10.0.1.1:1000→10.0.3.1:2000: 开始=1.000000s, 结束=1.024208s
+  10.0.2.1:1001→10.0.4.1:2001: 开始=1.000000s, 结束=1.041274s
+发现 2 个唯一流:
+  10.0.1.1:1000 → 10.0.3.1:2000
+  10.0.2.1:1001 → 10.0.4.1:2001
+拥塞窗口图表已保存至 ../plots/31/congestion_window_DEFAULT_MSG_AGG.png
+对数刻度拥塞窗口图表已保存至 ../plots/31/congestion_window_DEFAULT_MSG_AGG_log.png
+RTT图表已保存至 ../plots/31/rtt_DEFAULT_MSG_AGG.png
+队列长度图表已保存至 ../plots/31/queue_length_DEFAULT_MSG_AGG.png
+PRU令牌图表已保存至 ../plots/31/pru_tokens_DEFAULT_MSG_AGG.png
+绘图完成！
+Waf: Entering directory `/home/dyl/bolt_cc_ns3/build'
+Waf: Leaving directory `/home/dyl/bolt_cc_ns3/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.246s)
+Running the Simulation...
+The average thp from 03-07-0a:00:01:01:e8:03:00: 67.4885Gbps
+The average thp from 03-07-0a:00:02:01:e9:03:00: 59.3254Gbps
+99%ile queue size: 4.70588usec (60000 Bytes)
+Time taken by simulation: 1.08333 minutes
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:473: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 25345 (\N{CJK UNIFIED IDEOGRAPH-6301}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 32493 (\N{CJK UNIFIED IDEOGRAPH-7EED}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:475: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:544: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 38431 (\N{CJK UNIFIED IDEOGRAPH-961F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 21015 (\N{CJK UNIFIED IDEOGRAPH-5217}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22823 (\N{CJK UNIFIED IDEOGRAPH-5927}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 23567 (\N{CJK UNIFIED IDEOGRAPH-5C0F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:546: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:615: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 24320 (\N{CJK UNIFIED IDEOGRAPH-5F00}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 22987 (\N{CJK UNIFIED IDEOGRAPH-59CB}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 32467 (\N{CJK UNIFIED IDEOGRAPH-7ED3}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+/home/dyl/bolt_cc_ns3/plot/plot_fair.py:617: UserWarning: Glyph 26463 (\N{CJK UNIFIED IDEOGRAPH-675F}) missing from font(s) DejaVu Sans.
+  plt.savefig(out_file, dpi=300)
+Bolt 公平性实验可视化工具
+============================
+分析来自: ../outputs/bolt-fairness/0_MSGAGG_DEFAULT 的数据
+检测到的拥塞控制模式: DEFAULT
+检测到的功能: MSG_AGG
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.log 读取流统计数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.qlen 读取队列长度数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.tpt 读取吞吐量数据
+从 ../outputs/bolt-fairness/0_MSGAGG_DEFAULT.pru 读取PRU令牌数据
+流时序:
+  10.0.1.1:1000→10.0.3.1:2000: 开始=1.000000s, 结束=1.024208s
+  10.0.2.1:1001→10.0.4.1:2001: 开始=1.000000s, 结束=1.041274s
+发现 2 个唯一流:
+  10.0.1.1:1000 → 10.0.3.1:2000
+  10.0.2.1:1001 → 10.0.4.1:2001
+拥塞窗口图表已保存至 ../plots/36/congestion_window_DEFAULT_MSG_AGG.png
+对数刻度拥塞窗口图表已保存至 ../plots/36/congestion_window_DEFAULT_MSG_AGG_log.png
+RTT图表已保存至 ../plots/36/rtt_DEFAULT_MSG_AGG.png
+队列长度图表已保存至 ../plots/36/queue_length_DEFAULT_MSG_AGG.png
+PRU令牌图表已保存至 ../plots/36/pru_tokens_DEFAULT_MSG_AGG.png
+绘图完成！
+Waf: Entering directory `/home/dyl/bolt_cc_ns3/build'
+Waf: Leaving directory `/home/dyl/bolt_cc_ns3/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.241s)
+Running the Simulation...

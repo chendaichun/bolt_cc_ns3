@@ -1,0 +1,5 @@
+CompileFlags:
+  Add: 
+    - “std=c++11"
+    - "-I/usr/include"
+    - "-Wno-deprecated-builtins"

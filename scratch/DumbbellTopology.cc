@@ -191,10 +191,10 @@ int main(int argc, char *argv[]) {
   bool tracePruTokens = true;   // Trace PRU token values
   bool debugMode = false;       // Enable detailed packet traces for debugging
   uint32_t mtu = 1500;          // MTU size in bytes
-  uint32_t bdpBytes = 125000;     // Bandwidth-delay product in bytes
+  uint32_t bdpBytes = 550000;     // Bandwidth-delay product in bytes
   std::string ccMode("DEFAULT");
   uint32_t simIdx = 0;
-  double workload = 0.1;
+  double workload = 0.8;
 
   /* Bolt (Swift) Related Parameters */
   /*
@@ -213,7 +213,7 @@ int main(int argc, char *argv[]) {
   bool enableBts = false;
   bool enablePru = false;
   bool enableAbs = false;
-  std::string ccThreshold("20KB");
+  std::string ccThreshold("3KB");
 
   // Setup the simulation environment
   Time::SetResolution(Time::NS);
@@ -277,13 +277,13 @@ int main(int argc, char *argv[]) {
   // C2-S1 link (2us delay)
   PointToPointHelper c2s1Link;
   c2s1Link.SetDeviceAttribute("DataRate", StringValue("10Gbps"));
-  c2s1Link.SetChannelAttribute("Delay", StringValue("1us")); // One-way delay
+  c2s1Link.SetChannelAttribute("Delay", StringValue("2us")); // One-way delay
   c2s1Link.SetQueue("ns3::DropTailQueue", "MaxSize", StringValue("1p"));
 
   // S1-S2 link (2us delay) - BOTTLENECK LINK
   PointToPointHelper s1s2Link;
   s1s2Link.SetDeviceAttribute("DataRate", StringValue("10Gbps")); // Bottleneck link
-  s1s2Link.SetChannelAttribute("Delay", StringValue("1us")); // One-way delay
+  s1s2Link.SetChannelAttribute("Delay", StringValue("2us")); // One-way delay
   s1s2Link.SetQueue("ns3::DropTailQueue", "MaxSize", StringValue("1p"));
 
   // S2-C3 link (10us delay)
@@ -295,7 +295,7 @@ int main(int argc, char *argv[]) {
   // S2-C4 link (2us delay)
   PointToPointHelper s2c4Link;
   s2c4Link.SetDeviceAttribute("DataRate", StringValue("10Gbps"));
-  s2c4Link.SetChannelAttribute("Delay", StringValue("1us")); // One-way delay
+  s2c4Link.SetChannelAttribute("Delay", StringValue("2us")); // One-way delay
   s2c4Link.SetQueue("ns3::DropTailQueue", "MaxSize", StringValue("1p"));
 
   // Create the NetDevices and install them on nodes
